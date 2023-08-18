@@ -17,28 +17,18 @@ import org.testng.internal.invokers.AbstractParallelWorker.Arguments;
 
 import dev.failsafe.internal.util.Assert;
 
-public class test {
+public class Day1 extends BaseCls {
 
 	@Test
 	public void seleniumTest() throws InterruptedException {
 		// TODO Auto-generated method stub
-		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--disable-notifications");
-		WebDriver driver = new ChromeDriver(options);
 
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-
-		driver.get("https://login.salesforce.com");
-
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-
-		driver.findElement(By.id("username")).sendKeys("hari.radhakrishnan@qeagle.com");
-		driver.findElement(By.id("password")).sendKeys("Leaf$1234");
-		driver.findElement(By.id("Login")).click();
 
 		// Thread.sleep(1000);
 		WebElement icon = driver.findElement(By.xpath("//div[@class='slds-icon-waffle']"));
+		//wait.until(ExpectedConditions.elementToBeClickable(icon)).click();
+		//WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		wait.until(ExpectedConditions.elementToBeClickable(icon)).click();
 		// icon.click();
 		// Thread.sleep(2000);
