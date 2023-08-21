@@ -3,7 +3,7 @@ package mandatoryHW.week3;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class day5 {
+public class Day5 {
 
 	/*
 	 *  1.Understanding the problem to detailed level (clarity on input and output, constraints)

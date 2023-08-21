@@ -5,7 +5,7 @@ import java.util.Arrays;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class day1 {
+public class Day1 {
 
 	/*
 	 * 1.Understanding the problem to detailed level (clarity on input and output,
@@ -63,12 +63,12 @@ public class day1 {
 	}
 
 	public boolean flowers(int[] arr, int n) {
-		int len = arr.length;
-		for (int i = 0; i < arr.length; i++) {
+		int len = arr.length;   //O[1]
+		for (int i = 0; i < arr.length; i++) {   //O[n]
 			if (n == 0)
 				return true;
 
-			if ((n > 0) && ((i + 2) >= len)) {
+			if ((n > 0) && ((i + 2) >= len)) {   
 				return false;
 			}
 			if ((n > 0) && (arr[i] == 1) && (arr[i + 2] == 0)) {
