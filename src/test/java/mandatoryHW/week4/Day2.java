@@ -58,8 +58,17 @@ public class Day2 {
 		Assert.assertEquals(actual, new int[] {1,2});
 	}
 	
+	@Test
+	public void test3()
+	{
+		int[] actual = setMismatch(new int[] {3,3,1,2});
+		System.out.println(Arrays.toString(actual));
+		Assert.assertEquals(actual, new int[] {3,4});
+	}
+	
 	public int[] setMismatch(int[] nums)
 	{
+		Arrays.sort(nums);
 		int len = nums.length;
 		int[] missNums = new int[2];
 		for (int i = 0; i < nums.length; i++) {
