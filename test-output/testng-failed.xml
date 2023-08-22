@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="mandatoryHW.week4.Day2">
+      <class name="mandatoryHW.selenium.Day4">
         <methods>
-          <include name="test3"/>
+          <include name="tearDown"/>
+          <include name="base"/>
+          <include name="day4"/>
         </methods>
-      </class> <!-- mandatoryHW.week4.Day2 -->
+      </class> <!-- mandatoryHW.selenium.Day4 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
