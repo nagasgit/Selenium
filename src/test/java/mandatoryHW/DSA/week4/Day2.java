@@ -1,4 +1,4 @@
-package mandatoryHW.week4;
+package mandatoryHW.DSA.week4;
 
 import java.util.Arrays;
 

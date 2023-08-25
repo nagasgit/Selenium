@@ -1,4 +1,4 @@
-package mandatoryHW.week3;
+package mandatoryHW.DSA.week3;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
