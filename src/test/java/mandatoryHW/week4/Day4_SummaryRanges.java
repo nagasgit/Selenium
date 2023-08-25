@@ -8,6 +8,9 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class Day4_SummaryRanges {
+	
+			// O[2N] Notation
+	
 			/*
 			1.Understanding the problem to detailed level (clarity on input and output, constraints) 
 			   Yes - more than 1 hr
@@ -75,12 +78,12 @@ public class Day4_SummaryRanges {
 
 	public List<String> summaryRanges(int[] nums) {
 		List<String> result = new ArrayList<String>();
-		for (int i = 0; i < nums.length; i++) {
+		for (int i = 0; i < nums.length; i++) {    //O[N]
 
 			int startVal = nums[i];
 			int endVal = startVal;
 
-			while ((i + 1 < nums.length) && (nums[i + 1] - nums[i] == 1)) {
+			while ((i + 1 < nums.length) && (nums[i + 1] - nums[i] == 1)) {   //O[N]
 				endVal = nums[i + 1];
 				i++;
 			} 
