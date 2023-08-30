@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="mandatoryHW.selenium.Day5_HW">
+      <class name="mandatoryHW.DSA.week4.Day5_AssignCookies">
         <methods>
-          <include name="day5_Hw"/>
+          <include name="test4"/>
         </methods>
-      </class> <!-- mandatoryHW.selenium.Day5_HW -->
+      </class> <!-- mandatoryHW.DSA.week4.Day5_AssignCookies -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

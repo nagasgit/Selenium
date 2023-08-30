@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 public class Day4_SummaryRanges {
 	
-			// O[2N] Notation
+			// O[N] - Linear Notation
 	
 			/*
 			1.Understanding the problem to detailed level (clarity on input and output, constraints) 
@@ -75,6 +75,13 @@ public class Day4_SummaryRanges {
 		List<String> actual = summaryRanges(new int[] { 0, 1, 2, 3, 4, 5, 6,7,8,9,10,11,12,13,14,15,17});
 		Assert.assertEquals(actual, expected);
 	}
+	
+	@Test
+	public void test4() {
+		List<String> expected = Arrays.asList(new String[] { "-2->-1", "2->5","7" });
+		List<String> actual = summaryRanges(new int[] { -2, -1, 2, 3, 4, 5, 7 });
+		Assert.assertEquals(actual, expected);
+	}
 
 	public List<String> summaryRanges(int[] nums) {
 		List<String> result = new ArrayList<String>();
@@ -84,7 +91,6 @@ public class Day4_SummaryRanges {
 			int endVal = startVal;
 
 			while ((i + 1 < nums.length) && (nums[i + 1] - nums[i] == 1)) {   //O[N]
-				endVal = nums[i + 1];
 				i++;
 			} 
 			
