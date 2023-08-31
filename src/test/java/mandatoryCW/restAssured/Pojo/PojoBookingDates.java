@@ -1,4 +1,4 @@
-package mandatoryCW.restAssured;
+package mandatoryCW.restAssured.Pojo;
 
 public class PojoBookingDates {
 

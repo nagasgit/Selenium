@@ -8,6 +8,13 @@ import org.testng.annotations.Test;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import mandatoryCW.restAssured.Pojo.PojoBookingDates;
+import mandatoryCW.restAssured.Pojo.PojoGetResBookingIds;
+import mandatoryCW.restAssured.Pojo.PojoPartialUpdate;
+import mandatoryCW.restAssured.Pojo.Pojo_BookingIds;
+import mandatoryCW.restAssured.Pojo.Pojo_CreateBooking;
+import mandatoryCW.restAssured.Pojo.Pojo_CreateToken;
+import mandatoryCW.restAssured.Pojo.Pojo_TokResponse;
 
 public class BookerApi extends BaseOfBooker {
 	

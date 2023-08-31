@@ -1,20 +1,6 @@
-package mandatoryCW.restAssured;
+package mandatoryCW.restAssured.Pojo;
 
-public class Pojo_CreateBooking {
-
-	/*
-	 * '{
-	    "firstname" : "Jim",
-	    "lastname" : "Brown",
-	    "totalprice" : 111,
-	    "depositpaid" : true,
-	    "bookingdates" : {
-	        "checkin" : "2018-01-01",
-	        "checkout" : "2019-01-01"
-	    },
-	    "additionalneeds" : "Breakfast"
-		 * 
-	 */
+public class PojoUpdateBooking {
 	
 	private String firstname;
 	private String lastname;
@@ -23,18 +9,15 @@ public class Pojo_CreateBooking {
 	private PojoBookingDates bookingdates;
 	private String additionalneeds;
 	
-
-
-	public Pojo_CreateBooking(String firstname, String lastname, int totalprice, boolean depositpaid,
-			PojoBookingDates bookingdates, String additionalneeds) {
-		
+	public PojoUpdateBooking(String firstname,String lastname,int totalprice,
+			boolean depositpaid,PojoBookingDates bookingdates, String additionalneeds)
+	{
 		this.firstname = firstname;
 		this.lastname = lastname;
 		this.totalprice = totalprice;
 		this.depositpaid = depositpaid;
 		this.bookingdates = bookingdates;
 		this.additionalneeds = additionalneeds;
-		
 	}
 
 	public String getFirstname() {
@@ -60,8 +43,22 @@ public class Pojo_CreateBooking {
 	public String getAdditionalneeds() {
 		return additionalneeds;
 	}
+
+	public PojoUpdateBooking() {
 	
-	public Pojo_CreateBooking() {
-		
 	}
+	
+	
+	
+	
+	/*
+	 * 
+	 * 	private String firstname;
+	private String lastname;
+	private int totalprice;
+	private boolean depositpaid;
+	private PojoBookingDates bookingdates;
+	private String additionalneeds;
+	 */
+
 }

@@ -1,5 +1,7 @@
 package mandatoryCW.selenium.salesforceTCs;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.assertEquals;
 
 import java.time.Duration;
@@ -41,7 +43,7 @@ public class TC1_Individuals_Create extends BaseSalesForce {
 		//driver.findElement(By.xpath("//one-app-nav-bar-item-root/a[@title='Kumar123']")).click();
 		String actualRes = driver.findElement(By.xpath("(//a[@title='Kumar123'])[2]")).getText();
 		//String actualRes = driver.findElement(By.xpath("//span[text()='kumar123']")).getText();
-		assertEquals(actualRes, "Kumar123");
+		AssertJUnit.assertEquals(actualRes, "Kumar123");
 	}
 
 }
