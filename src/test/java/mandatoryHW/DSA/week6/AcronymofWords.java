@@ -8,36 +8,58 @@ import org.testng.annotations.Test;
 
 public class AcronymofWords {
 	
-	/* O[n]
-	 * Pseudo Code:
-	 * Get the string array length
-	 * Initialize the string var str as "";
-	 * Iterate the given array for loop to traverse each string to get the first character
-	 * and adding it to the empty str variable
-	 * return (Str.equals(s))
-	 * else return false
-	 * 
-	 * Test Data:
-	 * positive data:
-	 * String[] str = {"apple","ball","cat"}, String s = "abc";
-	 * return true
-	 * 
-	 * Positive data:
-	 * String[] str = {"a","b","c"}, String s = "abc";
-	 * return true
-	 * 
-	 * * Positive data:
-	 * String[] str = {"","ba","cc"}, String s = "bc";
-	 * return true
-	 * 
-	 * * edge case data:
-	 * String[] str = {"","",""}, String s = "";
-	 * return true
-	 * 
-	 * negative data
-	 * String[] str = {"bb","dd","zz"}, String s = "bzd";
-	 * return false
-	 */
+	/* 
+	 *  O[N] - Linear Notation
+			/*
+			1.Understanding the problem to detailed level (clarity on input and output, constraints) 
+			   Yes - 5 mins
+			
+			2.Frame Test data (valid, invalid, complex and edge cases)
+			    yes - 5 mins
+				 * Test Data:
+				 * positive data:
+				 * String[] str = {"apple","ball","cat"}, String s = "abc";
+				 * return true
+				 * 
+				 * Positive data:
+				 * String[] str = {"a","b","c"}, String s = "abc";
+				 * return true
+				 * 
+				 * * Positive data:
+				 * String[] str = {"","ba","cc"}, String s = "bc";
+				 * return true
+				 * 
+				 * * edge case data:
+				 * String[] str = {"","",""}, String s = "";
+				 * return true
+				 * 
+				 * negative data
+				 * String[] str = {"bb","dd","zz"}, String s = "bzd";
+				 * return false
+			3. Do you know the Solution? Yes
+			6. Dry run the pseudo code with all test data from step #2
+				Yes - 3 mins
+			7.Write the code on notepad
+				Yes - 3 min
+			8. Dry run the code with all test data from step #2
+				Yes - 1 min
+			9. Write code on IDE (remember to add comments and practice coding standards)
+				4 mins		
+				
+					 /* 
+			 /* Pseudo Code
+			  *  Initialize the int variable length and store the size of te
+			     and String 
+			  *  Initialize string variable b with the value as "".
+			  *  Iterate the for loop through the string array size
+			  *  and add the first character of each string in the variable b
+			  *  and return true if b and string s matches 
+			  */
+		
+			/* Problem Statement
+			 * https://leetcode.com/problems/check-if-a-string-is-an-acronym-of-words/submissions/
+			 */
+
 	
 	@Test
 	public void test1()
