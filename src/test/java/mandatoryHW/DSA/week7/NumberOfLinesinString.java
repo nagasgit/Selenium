@@ -45,16 +45,16 @@ public class NumberOfLinesinString
 		{
 			//alpha.get(alpha)
 			sum = sum + alpha.get(s.charAt(i));
-			str = str + s.charAt(i);
+			//str = str + s.charAt(i);
 			if (sum > 100) {
 				lines++;
 				sum = alpha.get(s.charAt(i));	
 				System.out.println(str);
-				str = "";
+				//str = "";
 			} 		
 		}
 		res[0] = lines;
 		res[1] = sum;	
-		return res;
+		return res; 
 	}
     }
