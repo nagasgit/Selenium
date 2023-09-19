@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 public class MaxNumOfPairs 
 {
 
-	/* 
+	/*  O[3n] 
 	 * 1.Understanding the problem to detailed level (clarity on input and output, constraints)
 		  Yes
 		2.Frame Test data (valid, invalid, complex and edge cases)
@@ -27,6 +27,7 @@ public class MaxNumOfPairs
 				1) Input - string array
 				2) Iterate the loop till array length
 					a. Inner loop to iterate the word[i]
+					a1. another loop to iterate the each chars of word[i]
 					b. Initialzie the str variable
 					c. Add each char from word[i] in reverse order
 				3) Word[i] is equals to reversed str, count++
@@ -49,8 +50,7 @@ public class MaxNumOfPairs
 	public void test1()
 	{
 		int actual = maxNumPairs(new String[] {"ab","ac","ba","ca","zz"});
-		Assert.assertEquals(actual, 2);
-		
+		Assert.assertEquals(actual, 2);	
 	}
 	
 	@Test
@@ -78,7 +78,6 @@ public class MaxNumOfPairs
 				}
 				start = res.length();
 			}
-
 		}
 		return count;
 }
