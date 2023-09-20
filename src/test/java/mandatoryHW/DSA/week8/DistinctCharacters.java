@@ -5,7 +5,8 @@ import org.testng.annotations.Test;
 
 public class DistinctCharacters 
 {
-	/*
+	/* Time - O[n/2]
+	 * Space - O[1]
 	 * 1.Understanding the problem to detailed level (clarity on input and output, constraints)
 		  Yes
 		2.Frame Test data (valid, invalid, complex and edge cases)
@@ -84,10 +85,10 @@ public class DistinctCharacters
 	{
 		int pointer = 0; int count = 0;
 		String subs;
-		while (pointer < s.length()-2)
+		while (pointer <= s.length()-3)
 		{
-			if (pointer < s.length()-2) {
-				subs = s.substring(pointer, (s.length()-2)+pointer);
+			if (pointer < s.length()-3) {
+				subs = s.substring(pointer, (s.length()-3)+pointer);
 			}else {
 				subs = s.substring(pointer);
 			}
