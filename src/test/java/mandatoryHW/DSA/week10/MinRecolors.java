@@ -9,8 +9,8 @@ import org.testng.annotations.Test;
 public class MinRecolors 
 {
 	
-	/* Time - 
-	 * Space - 
+	/* Time - O[n]
+	 * Space - O[1]
 	 * 1.Understanding the problem to detailed level (clarity on input and output, constraints)
 		  Yes
 	   2.Frame Test data (valid, invalid, complex and edge cases)

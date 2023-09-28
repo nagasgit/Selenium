@@ -1,5 +1,8 @@
 package mandatoryCW.restAssured.Pojo;
 
+import lombok.Data;
+
+@Data
 public class Pojo_BookingIds {
 
 	private int bookingid;
@@ -10,16 +13,14 @@ public class Pojo_BookingIds {
 		this.booking = booking;
 	}
 
-	public int getBookingid() {
-		return bookingid;
-	}
-
-	public Pojo_CreateBooking getBooking() {
-		return booking;
-	}
-
-	public Pojo_BookingIds() {
-	
-	}
+	/*
+	 * public int getBookingid() { return bookingid; }
+	 * 
+	 * public Pojo_CreateBooking getBooking() { return booking; }
+	 * 
+	 * public Pojo_BookingIds() {
+	 * 
+	 * }
+	 */
 		
 }

@@ -82,6 +82,13 @@ public class Day4_SummaryRanges {
 		List<String> actual = summaryRanges(new int[] { -2, -1, 2, 3, 4, 5, 7 });
 		Assert.assertEquals(actual, expected);
 	}
+	
+	@Test
+	public void test5() {
+		List<String> expected = Arrays.asList(new String[] {"1"});
+		List<String> actual = summaryRanges(new int[] { 1 });
+		Assert.assertEquals(actual, expected);
+	}
 
 	public List<String> summaryRanges(int[] nums) {
 		List<String> result = new ArrayList<String>();
@@ -99,9 +106,7 @@ public class Day4_SummaryRanges {
 			} else {
 				result.add(startVal + "->" + endVal);
 			}
-
 		}
-
 		return result;
 	}
 

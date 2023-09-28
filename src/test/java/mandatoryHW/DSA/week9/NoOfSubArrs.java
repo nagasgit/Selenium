@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 public class NoOfSubArrs 
 {
 
-	/* Time - O[n/2]
+	/* Time - O[n]
 	 * Space - O[1]
 	 * 1.Understanding the problem to detailed level (clarity on input and output, constraints)
 		  Yes

@@ -72,9 +72,7 @@ public class BookerApi extends BaseOfBooker {
 		//System.out.println(bIds[5]);
 		int length = bIds.length;
 		System.out.println(length);
-		
-		System.out.println("Booking id is:"+ bIds[5].getBookingid());
-		
+		System.out.println("Booking id is:"+ bIds[5].getBookingid());	
 	}
 	
 	@Test (dependsOnMethods = "mandatoryCW.restAssured.BookerApi.generateToken")

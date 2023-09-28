@@ -20,37 +20,34 @@ public class GrumpySeller_AlternateApp
 	//Customers {1,0,1,2,1,1,7,5}, grumpy {0,1,0,1,0,1,0,1}, minutes - 3
 	
 	@Test
-	public void tc1()
-	{
-		int actual = grumpySeller(new int[] {1,0,1,2,1,1,7,5}, new int[] {0,1,0,1,0,1,0,1}, 3);
+	public void tc1() {
+		int actual = grumpySeller(new int[] { 1, 0, 1, 2, 1, 1, 7, 5 }, new int[] { 0, 1, 0, 1, 0, 1, 0, 1 }, 3);
 		Assert.assertEquals(actual, 16);
 	}
-	public int grumpySeller(int[] customers, int[] grumpy, int minutes)
-	{
-		int left = 0; int satisfied = 0; 
-		int unsatisfied = 0; int maxunsatisfied = 0;
-		
-		for (int i = 0; i < grumpy.length; i++) 
-		{
-			if (grumpy[i] == 0)
-			{
+
+	public int grumpySeller(int[] customers, int[] grumpy, int minutes) {
+		int left = 0;
+		int satisfied = 0;
+		int unsatisfied = 0;
+		int maxunsatisfied = 0;
+
+		for (int i = 0; i < grumpy.length; i++) {
+			if (grumpy[i] == 0) {
 				satisfied = satisfied + customers[i];
-			}else {
+			} else {
 				unsatisfied = unsatisfied + customers[i];
-		}
-			
-			if ((i - left+1) > minutes)
-			{
-				if (grumpy[left] == 1)
-				{
+			}
+
+			if ((i - left + 1) > minutes) {
+				if (grumpy[left] == 1) {
 					unsatisfied = unsatisfied - customers[left];
 				}
 				left++;
 			}
 			maxunsatisfied = Math.max(maxunsatisfied, unsatisfied);
 		}
-		
-		return satisfied+maxunsatisfied;
+
+		return satisfied + maxunsatisfied;
 	}
-	
+
 }
