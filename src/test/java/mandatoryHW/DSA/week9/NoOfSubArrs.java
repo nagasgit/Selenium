@@ -13,11 +13,11 @@ public class NoOfSubArrs
 	   2.Frame Test data (valid, invalid, complex and edge cases)
 		  Test Data:
 		  #1:
-		  input: 
-		  output:  
+		  input: [2,2,2,2,5,5,5,8],3,4
+		  output:  3
 		  
 		  #2:
-		  input: arr<3
+		  input: [2,2],3,2
 		  output: 0
 		  
 		  
