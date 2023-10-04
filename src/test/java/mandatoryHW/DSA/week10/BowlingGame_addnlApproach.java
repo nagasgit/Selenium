@@ -56,6 +56,8 @@ public class BowlingGame_addnlApproach
 		int sum2 = 0;
 		int p1ind = 0;
 		int p2ind = 0;
+		String str = "06";
+		
 		for (int i = 0; i < player2.length; i++) {
 			sum1 += player1[i];
 			sum2 += player2[i];
