@@ -13,7 +13,7 @@ public class SumOfUniqueEle
 {
 	/*https://leetcode.com/problems/sum-of-unique-elements/
 	/* Time - O[n]
-	 * Space - guess O[n], need to confirm?
+	 * Space - O[1]
 	 * 1.Understanding the problem to detailed level (clarity on input and output, constraints)
 		  Yes (1 min)
 		2.Frame Test data (valid, invalid, complex and edge cases)

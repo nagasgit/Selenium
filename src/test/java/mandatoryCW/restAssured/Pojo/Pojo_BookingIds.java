@@ -13,6 +13,11 @@ public class Pojo_BookingIds {
 		this.booking = booking;
 	}
 
+	public Pojo_CreateBooking getBooking() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 	/*
 	 * public int getBookingid() { return bookingid; }
 	 * 

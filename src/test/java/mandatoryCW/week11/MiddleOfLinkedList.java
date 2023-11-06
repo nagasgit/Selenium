@@ -7,7 +7,7 @@ public class MiddleOfLinkedList extends ReverseList
         1) Create an object for listnode
         2) create two objects fast and slow and assign the head to those objects
         3) while loop to check if (fast != 0 && fast.next != null)
-        4) assign fast is equals to head.next and slow = head.next.next
+        4) assign fast is equals to fast.next.next and slow = slow.next
         5) return slow
         */
 

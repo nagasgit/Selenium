@@ -20,6 +20,10 @@ public class RemoveLinkedListEles
 			this.val=val;
 			this.next=next;
 		}
+
+		public ListNode() {
+			// TODO Auto-generated constructor stub
+		}
 	}
 	
 	@Test
@@ -30,17 +34,15 @@ public class RemoveLinkedListEles
 	}
 	
 	public ListNode removelinkedList(ListNode head, int val){
-		ListNode node = new ListNode(1, new ListNode(2,new ListNode(3,new ListNode(4,new ListNode(5,null)))));
-		//ListNode node = new ListNode();
+		//ListNode node = new ListNode(1, new ListNode(2,new ListNode(3,new ListNode(4,new ListNode(5,null)))));
+		ListNode node = new ListNode();
 		ListNode movenode = node;
 		
 		 while (head != null)
 	        {
 	            if (head.val != val){
-	                movenode.next = head;
-	                movenode = movenode.next;
+	                movenode = head;
 	                head = head.next;
-	              //  movenode.next = null;
 	            }else{
 	                head = head.next;
 	            }

@@ -38,14 +38,14 @@ public class Node
 		}
 	
 	public static void main(String[] args) 
-	{
-		Node head = new Node(11, new Node(22, new Node(33, new Node(90, null))));
-		while (head != null) {
-			System.out.println(head.data);
-			head = head.next;
+		{
+			Node head = new Node(11, new Node(22, new Node(33, new Node(90, null))));
+			while (head != null) {
+				System.out.println(head.data);
+				head = head.next;
+			}
+			size(head);
 		}
-		size(head);
-	}
 	
 	
 	

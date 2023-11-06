@@ -8,9 +8,9 @@ import org.testng.annotations.Test;
 
 public class ReverseList extends SinglyLinkedList
 {
-	class ListNode{
+	public class ListNode{
 		int val;
-		ListNode next;
+		public ListNode next;
 		
 		public ListNode(int val) {
 			this.val = val;
